@@ -15,7 +15,7 @@ function grabNums() {
     let value = '';
     let first = line.split('').find((v)=> !Number.isNaN(Number(v)))
     let last = line.split('').findLast((v)=> !Number.isNaN(Number(v)))
-    return Number( first + last);//returns an arrary of all the numbers 
+    return Number( first + last);//returns an array of all the numbers 
    });
 //return the sum of all the values
 return values.reduce((s, v)=>s + v)
